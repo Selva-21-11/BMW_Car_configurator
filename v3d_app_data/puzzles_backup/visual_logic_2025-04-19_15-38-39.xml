@@ -1,0 +1,82 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="20" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="16.84339060375339" scrolly="193.53961276223708" scale="0.8999999999999999">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setLightParam" id="Pty%ZMcO/O*eAnOe)oFZ" x="83" y="-75">
+      <field name="TYPE">INTENSITY</field>
+      <value name="INTENSITY">
+        <shadow type="math_number" id="eCQ}ODgdPa}fhw2/LBFt">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="OBJECT">
+        <shadow type="objectList" id="=FC(f(gegtvlit$P~I_@">
+          <field name="FIELDNAME">Area</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setTimeout" id="x*J}$ZGerg3a[.4ojMu?">
+          <value name="VALUE">
+            <shadow type="math_number" id="R:4Q1uvuL%GF#Dhl~IF0">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="animateParam" id="!PcKuYHvBPYb3!Yhv2?+">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <field name="EASING">Linear</field>
+              <field name="EASING2">InOut</field>
+              <field name="YOYO">FALSE</field>
+              <value name="FROM">
+                <shadow type="math_number" id="f@oGHj3StVp;lyaul-YP">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="TO">
+                <shadow type="math_number" id="u%7,PC!ti`_75/JAr1H^">
+                  <field name="NUM">100</field>
+                </shadow>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="S9u24EdDP(9t?P${@J}P">
+                  <field name="NUM">3</field>
+                </shadow>
+              </value>
+              <value name="REPEAT">
+                <shadow type="math_number" id="IYAwSp29KrIZ%`kx=%5j">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <statement name="ON_UPDATE">
+                <block type="setLightParam" id="(,YKZ6s#gdsE+qlCxFJl">
+                  <field name="TYPE">INTENSITY</field>
+                  <value name="INTENSITY">
+                    <shadow type="math_number" id="C;!;vHDMkPK;21WD6O*s">
+                      <field name="NUM">100</field>
+                    </shadow>
+                    <block type="animateParamUpdate" id="(Cn=4EQW$dEA3ScL-)}l"></block>
+                  </value>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="kN(U/j?kQv?]DJ+L4NMr">
+                      <field name="FIELDNAME">Area</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="autoRotateCamera" id="UNUF|7c[l4.`^L_Zo_rt">
+                  <field name="ON_OFF">ON</field>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="X4u%n(m0Sm?.z$CoqUaA">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="37" viewport-w="614.4" viewport-h="388" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
