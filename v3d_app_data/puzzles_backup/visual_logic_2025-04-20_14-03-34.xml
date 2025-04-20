@@ -1,0 +1,65 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="15.243353982659528" scrolly="191.13964938333083" scale="0.8999999999999999">
+    <block xmlns="https://developers.google.com/blockly/xml" type="animateParam" id="!PcKuYHvBPYb3!Yhv2?+" x="50" y="-130">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+      <field name="EASING">Linear</field>
+      <field name="EASING2">InOut</field>
+      <field name="YOYO">FALSE</field>
+      <value name="FROM">
+        <shadow type="math_number" id="f@oGHj3StVp;lyaul-YP">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="TO">
+        <shadow type="math_number" id="u%7,PC!ti`_75/JAr1H^">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number" id="S9u24EdDP(9t?P${@J}P">
+          <field name="NUM">6</field>
+        </shadow>
+      </value>
+      <value name="REPEAT">
+        <shadow type="math_number" id="IYAwSp29KrIZ%`kx=%5j">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <statement name="ON_UPDATE">
+        <block type="setLightParam" id="(,YKZ6s#gdsE+qlCxFJl">
+          <field name="TYPE">INTENSITY</field>
+          <value name="INTENSITY">
+            <shadow type="math_number" id="C;!;vHDMkPK;21WD6O*s">
+              <field name="NUM">100</field>
+            </shadow>
+            <block type="animateParamUpdate" id="(Cn=4EQW$dEA3ScL-)}l"></block>
+          </value>
+          <value name="OBJECT">
+            <shadow type="objectList" id="kN(U/j?kQv?]DJ+L4NMr">
+              <field name="FIELDNAME">Area</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="B3FP(b7xV`F^Vq^RCm63" x="150" y="70">
+      <value name="THRESHOLD">
+        <shadow type="number_slider" id="_erG!9bSXLKpWeF7Vf~n">
+          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        </shadow>
+      </value>
+      <value name="STRENGTH">
+        <shadow type="number_slider" id="Cq{q0l+y(PzErCemuqaO">
+          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        </shadow>
+      </value>
+      <value name="RADIUS">
+        <shadow type="number_slider" id="Xg2)PXVb_pdw~1ArPe?%">
+          <field name="NUM" min="0" max="1" step="0.1">0.4</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="37" viewport-w="614.4" viewport-h="388" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
