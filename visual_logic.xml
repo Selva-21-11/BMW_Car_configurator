@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="New Tab" type="CommonTab" active="true" scrollx="15.243353982659528" scrolly="117" scale="0.8999999999999999">
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="94.39590401583268" scrolly="188.4000244140625" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="animateParam" id="!PcKuYHvBPYb3!Yhv2?+" x="50" y="-130">
       <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
       <field name="EASING">Linear</field>
@@ -51,34 +51,110 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="#:OgL%PO0z]~yU+$#x(x" x="90" y="50">
+    <block xmlns="https://developers.google.com/blockly/xml" type="stopAnimation" id="#V32oe~}t)%jdTu%A{CH" x="610" y="-10">
+      <value name="VALUE">
+        <shadow type="animationList" id="f/%-OUrmJx8cn0OXg[~%">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="getAnimations" id="@egc1+/$D[E@D9,yF0/u">
+          <value name="OBJECTINPUT">
+            <shadow type="objectList" id="V#fuK$buRu84@J0$5T^O">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="allObjectList" id="$eD$j:OtS}`8|P/`=!BZ"></block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="WgRxF6M+CeB8pL--UgyZ" x="150" y="50">
       <value name="THRESHOLD">
-        <shadow type="number_slider" id=",fB-{px^..#.ZtcsH%Uh">
-          <field name="NUM" min="0" max="10" step="0.1">0.8</field>
+        <shadow type="number_slider" id="rGwZidcfp$w;u8cFknKG">
+          <field name="NUM" min="0" max="10" step="0.1">5</field>
         </shadow>
       </value>
       <value name="STRENGTH">
-        <shadow type="number_slider" id="szIkzP8RYZ;U@F%X+gL!">
-          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        <shadow type="number_slider" id="9`Q1dvr=9Ud!L-jY4[gW">
+          <field name="NUM" min="0" max="10" step="0.1">0.2</field>
         </shadow>
       </value>
       <value name="RADIUS">
-        <shadow type="number_slider" id="`b5w!5ri@zl5`9{3C/IH">
-          <field name="NUM" min="0" max="1" step="0.1">0.5</field>
+        <shadow type="number_slider" id="1h#}Nfb`D@UbJwrt,?Au">
+          <field name="NUM" min="0" max="1" step="0.1">0.3</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="wdv/U7B@X.],;WHplNlG" disabled="true" x="250" y="170">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="E^{*ulLILpWP,U_!KUDD">
+          <field name="TEXT">enter</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector" id=".Y|Om`B/RbKEetMVO5,-">
+          <field name="DOM_OBJECT">CONTAINER</field>
         </shadow>
       </value>
       <next>
-        <block type="brightnessContrast" id="v(5);UCbshNOG@[g^[`;">
-          <value name="BRIGHTNESS">
-            <shadow type="number_slider" id="n-=XW3zPc/=Izo}u1F%W">
-              <field name="NUM" min="-5" max="5" step="0.1">0.1</field>
+        <block type="setHTMLElemAttribute" id="]!L5$v8SR?F%dkm%gI|r" disabled="true">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <shadow type="text" id="bBbzM*(q0(*N]~q8e8lk">
+              <field name="TEXT">Enter</field>
             </shadow>
           </value>
-          <value name="CONTRAST">
-            <shadow type="number_slider" id="4CR2L^oX?%J0shP|5kvz">
-              <field name="NUM" min="-1" max="1" step="0.1">0.22</field>
+          <value name="ID">
+            <shadow type="text" id="{zceWEwz}n`0v]#z?+Mj">
+              <field name="TEXT">enter</field>
             </shadow>
           </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="GbFw~-XnP(|93)3bUV7u" disabled="true">
+              <field name="ATTRIBUTE">style</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <shadow type="text" id="h4Pa,t1xFSg7_R}+3i6.">
+                  <field name="TEXT"></field>
+                </shadow>
+                <block type="cssStyleList" id="AY[Et+Sp)X8PRVc@AX7T">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml">
+                    <prop name="position" shadowvalue="absolute"></prop>
+                    <prop name="background-color" shadowvalue="#ADE043"></prop>
+                    <prop name="width" shadowvalue="60px"></prop>
+                    <prop name="height" shadowvalue="60px"></prop>
+                  </mutation>
+                  <value name="PROP0">
+                    <shadow type="positionDropdown" id="~L;(QlXaJwjBknNfOtVq">
+                      <field name="TEXT">absolute</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP1">
+                    <shadow type="text" id="uFC*XH]KYSE$R{!c*jj(">
+                      <field name="TEXT">#ADE043</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP2">
+                    <shadow type="text" id="I)1R9(D~N#1LSOx|i{Oe">
+                      <field name="TEXT">60px</field>
+                    </shadow>
+                  </value>
+                  <value name="PROP3">
+                    <shadow type="text" id="{/3R;hEv0KExb)4]0+7X">
+                      <field name="TEXT">60px</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="oP5w!U`|0F(fdSk|jfM[">
+                  <field name="TEXT">enter</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
         </block>
       </next>
     </block>
