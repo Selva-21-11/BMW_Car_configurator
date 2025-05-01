@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BMW Car Model</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #my_iframe {
+      width: 60%;
+      height: 100%;
+      border: 0;
+    }
+
+    #menu {
+      width: 40%;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
+
+    #menu::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #menu::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    #menu::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+    }
+
+    #menu:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    #menu button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #444;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #menu button:hover {
+      background-color: #555;
+    }
+
+    #menu-logo {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown {
+      margin-bottom: 25px;
+    }
+
+    .dropdown-toggle {
+      width: 90%;
+      height: 70px;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      border: none;
+      text-align: left;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-toggle:hover {
+      background-color: #555;
+    }
+
+    .dropdown-content-wrapper {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-out;
+    }
+
+    .dropdown-content-wrapper.open {
+      max-height: 300px; /* Adjust if you have more buttons */
+    }
+
+    .dropdown-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+    }
+
+    .dropdown-content button {
+      width: 90%;
+      margin-bottom: 12px;
+      padding: 14px;
+      background-color: #007acc;
+      border: none;
+      color: white;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 0 auto;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .dropdown-content button:hover {
+      background-color: #005fa3;
+      transform: scale(1.01);
+    }
+
+    .dropdown-content button:active {
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body>
+  <iframe id="my_iframe" src="BMW Car Model.html"></iframe>
+
+  <div id="menu">
+    <img src="BMWLogo.png" alt="Logo" id="menu-logo">
+
+    <!-- Dropdown Template -->
+    <div class="dropdown">
+      <button class="dropdown-toggle">Paint</button>
+      <div class="dropdown-content-wrapper">
+        <div class="dropdown-content">
+          <button id="blackcolor">Black</button>
+          <button id="orangecolor">Orange</button>
+          <button id="bluecolor">Blue</button>
+          <button id="redcolor">Red</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">Wheel</button>
+      <div class="dropdown-content-wrapper">
+        <div class="dropdown-content">
+          <button id="button2a">Button 2.1</button>
+          <button id="button2b">Button 2.2</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">Brake Pad Color</button>
+      <div class="dropdown-content-wrapper">
+        <div class="dropdown-content">
+          <button id="button3a">Button 3.1</button>
+          <button id="button3b">Button 3.2</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">Interior Color</button>
+      <div class="dropdown-content-wrapper">
+        <div class="dropdown-content">
+          <button id="button4a">Button 4.1</button>
+          <button id="button4b">Button 4.2</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">Accessories</button>
+      <div class="dropdown-content-wrapper">
+        <div class="dropdown-content">
+          <button id="button5a">Button 5.1</button>
+          <button id="button5b">Button 5.2</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">Functions</button>
+      <div class="dropdown-content-wrapper">
+        <div class="dropdown-content">
+          <button id="button5a">Button 5.1</button>
+          <button id="button5b">Button 5.2</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toggles = document.querySelectorAll('.dropdown-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const wrapper = toggle.nextElementSibling;
+        wrapper.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+
+</html>

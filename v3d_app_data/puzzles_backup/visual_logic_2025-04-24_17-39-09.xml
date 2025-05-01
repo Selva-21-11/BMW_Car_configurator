@@ -1,0 +1,39 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="-81" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="m~s3Idm-[Fs|YV]QWg0/" x="130" y="90">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="169.59149584648344" scrolly="136.44552470566322" scale="0.7404322273126936">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="f.ki=]8cPVk_%vqC~._o" x="-130" y="170">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="fSPv,TjE~3j4Xl:{az=~">
+          <field name="TEXT">blackcolor</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setMaterialColor" id="~KZ`V4`.iD2`Zw;{:sjz">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="true"></mutation>
+          <field name="MAT_COL_NAME">Principled BSDF Color</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="|jl)WEL_$47wOIU[`I]z">
+              <field name="FIELDNAME">Body color red</field>
+            </shadow>
+          </value>
+          <value name="CSS">
+            <block type="text" id="n{t;lKEEr2-5CP`3B{yW">
+              <field name="TEXT">#000000</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="37" viewport-w="614.4" viewport-h="388" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

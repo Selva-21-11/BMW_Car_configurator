@@ -1,0 +1,31 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20.000000000000227" scrolly="20" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="m~s3Idm-[Fs|YV]QWg0/" x="130" y="90">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="20" scrolly="20" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="1.k[XogoI;LLt9,gxGyL" x="70" y="150">
+      <value name="THRESHOLD">
+        <shadow type="number_slider" id="WD$`Dgh16OLsU6K01g]P">
+          <field name="NUM" min="0" max="10" step="0.1">5</field>
+        </shadow>
+      </value>
+      <value name="STRENGTH">
+        <shadow type="number_slider" id="MOxT.l`w|%;#7@^e)17_">
+          <field name="NUM" min="0" max="10" step="0.1">0.1</field>
+        </shadow>
+      </value>
+      <value name="RADIUS">
+        <shadow type="number_slider" id="AJK{?n]wEapVF[$tqjF:">
+          <field name="NUM" min="0" max="1" step="0.1">0.5</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="37" viewport-w="614.4" viewport-h="388" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
